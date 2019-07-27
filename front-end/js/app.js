@@ -19,6 +19,9 @@
 
     window.addEventListener('scroll', fixNav);
 
+
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -58,10 +61,10 @@ function showSlides(n) {
   const headerContent = document.querySelectorAll('.slideshow-container .text h2');
   const imageContent = document.querySelectorAll('.slideshow-container .text img');
 	const pContent = document.querySelectorAll('.slideshow-container .text p');
-	const ctaContent = document.querySelectorAll('.slideshow-container .text button'); /*change button tex*/
+	const ctaContent = document.querySelectorAll('.slideshow-container .text button'); /*change button text*/
 	
   headerContent[0].innerText = 'Scraps of Life';
-  imageContent[0].src = 'https://via.placeholder.com/640x180'; /*change image*/
+  imageContent[0].src = 'front-end/images/scraps_of_life.jpg'; /*change image*/
 	pContent[0].innerText = 'Imagine the filthy, toxic mess all around you. Feel it on your skin.Imagine eating here.Now open your eyes and see all the people who live here.';
   pContent[0].style.fontSize = 'large';
   ctaContent[0].innerText = 'Read more...';
@@ -72,7 +75,7 @@ function showSlides(n) {
 
   
   headerContent[1].innerText = 'War Widow';
-  imageContent[1].src = 'https://via.placeholder.com/640x180'; /*change image*/
+  imageContent[1].src = 'front-end/images/widow.png'; /*change image*/
 	pContent[1].innerText = 'She remembers telling him: “I don’t want to lose you. I don’t want my kids to grow up without a father.';
   pContent[1].style.fontSize = 'large';
   ctaContent[1].innerText = 'Read more...';
@@ -84,7 +87,7 @@ function showSlides(n) {
 
 	 
   headerContent[2].innerText = 'A Lifestyle Lost';
-  imageContent[2].src = 'https://via.placeholder.com/640x180'; /*change image*/
+  imageContent[2].src = 'front-end/images/lifestyle_lost.png'; /*change image*/
 	pContent[2].innerText = 'Bombs and artillery shells are equally lethal to rich and poor, and among the more than 2.3 million Syrian refugees are many wealthy Syrians who have had family slaughtered. ';
   pContent[2].style.fontSize = 'large';
   ctaContent[2].innerText = 'Read more...';
@@ -92,5 +95,18 @@ function showSlides(n) {
   ctaContent[2].style.background = "#988488";
   ctaContent[2].style.cursor = "pointer";
   ctaContent[2].style.borderRadius = "12px";})(window);
+
+  //linking to stories.html
+  document.getElementsByClassName("cta").addEventListener("click", function (event) {
+    window.location = "stories.html";
+  });
   
+  // const x = document.getElementById("callToAction"); 
+
+  // x.addEventListener("click", RespondClick); 
+
+  // function RespondClick() { 
+  //     document.getElementById("effect").innerHTML += 
+  //               "stories.html"; 
+  // } 
 
