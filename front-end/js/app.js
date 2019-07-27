@@ -69,7 +69,7 @@ function showSlides(n) {
   imageContent[1].src = 'https://via.placeholder.com/640x180'; /*change image*/
 	pContent[1].innerText = 'Omnis officiis eius tempore itaque quae, ut aspernatur? Aperiam reiciendis excepturi ';
 	ctaContent[1].innerText = 'Read more...';
-	
+	 
   headerContent[2].innerText = 'Heading Content 3';
   imageContent[2].src = 'https://via.placeholder.com/640x180'; /*change image*/
 	pContent[2].innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ';
