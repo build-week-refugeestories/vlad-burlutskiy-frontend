@@ -60,18 +60,37 @@ function showSlides(n) {
 	const pContent = document.querySelectorAll('.slideshow-container .text p');
 	const ctaContent = document.querySelectorAll('.slideshow-container .text button'); /*change button tex*/
 	
-  headerContent[0].innerText = 'Heading Content 1';
+  headerContent[0].innerText = 'Scraps of Life';
   imageContent[0].src = 'https://via.placeholder.com/640x180'; /*change image*/
-	pContent[0].innerText = 'repellat qui, modi, sapiente odio recusandae, adipisci voluptate ipsum praesentium laborum.';
-	ctaContent[0].innerText = 'Read more...';
-	
-  headerContent[1].innerText = 'Heading Content 2';
+	pContent[0].innerText = 'Imagine the filthy, toxic mess all around you. Feel it on your skin.Imagine eating here.Now open your eyes and see all the people who live here.';
+  pContent[0].style.fontSize = 'large';
+  ctaContent[0].innerText = 'Read more...';
+  ctaContent[0].style.fontSize = "large";
+  ctaContent[0].style.background = "#988488";
+  ctaContent[0].style.cursor = "pointer";
+  ctaContent[0].style.borderRadius = "12px";
+
+  
+  headerContent[1].innerText = 'War Widow';
   imageContent[1].src = 'https://via.placeholder.com/640x180'; /*change image*/
-	pContent[1].innerText = 'Omnis officiis eius tempore itaque quae, ut aspernatur? Aperiam reiciendis excepturi ';
-	ctaContent[1].innerText = 'Read more...';
+	pContent[1].innerText = 'She remembers telling him: “I don’t want to lose you. I don’t want my kids to grow up without a father.';
+  pContent[1].style.fontSize = 'large';
+  ctaContent[1].innerText = 'Read more...';
+  ctaContent[1].style.fontSize = "large";
+  ctaContent[1].style.background = "#988488";
+  ctaContent[1].style.cursor = "pointer";
+  ctaContent[1].style.borderRadius = "12px";
+
+
 	 
-  headerContent[2].innerText = 'Heading Content 3';
+  headerContent[2].innerText = 'A Lifestyle Lost';
   imageContent[2].src = 'https://via.placeholder.com/640x180'; /*change image*/
-	pContent[2].innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ';
-	ctaContent[2].innerText = 'Read more...';})(window)
+	pContent[2].innerText = 'Bombs and artillery shells are equally lethal to rich and poor, and among the more than 2.3 million Syrian refugees are many wealthy Syrians who have had family slaughtered. ';
+  pContent[2].style.fontSize = 'large';
+  ctaContent[2].innerText = 'Read more...';
+  ctaContent[2].style.fontSize = "large";
+  ctaContent[2].style.background = "#988488";
+  ctaContent[2].style.cursor = "pointer";
+  ctaContent[2].style.borderRadius = "12px";})(window);
+  
 
