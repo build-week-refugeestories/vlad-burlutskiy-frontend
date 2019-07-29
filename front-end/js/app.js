@@ -104,8 +104,8 @@ function showSlides(n) {
   ctaContent[2].style.borderColor = "#3486eb";
   ctaContent[2].style.boxShadow = "0 4px 16px 0 #3486eb";})(window);
 
-
-
+  // document.querySelectorAll('a').forEach(e => e.addEventListener('mouseover', a => a.path[0].style.color = '#1d7539'));
+  // document.querySelectorAll('a').forEach(e => e.addEventListener('mouseleave', a => a.path[0].style.color = 'black'));
   //linking to stories.html
   // document.getElementsByClassName("cta").addEventListener("click", function () {
   //   window.location = "stories.html";
