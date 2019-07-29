@@ -63,7 +63,7 @@ function showSlides(n) {
 	const pContent = document.querySelectorAll('.slideshow-container .text p');
 	const ctaContent = document.querySelectorAll('.slideshow-container .text button'); /*change button text*/
   // const ctaButton = document.getElementsByClassName('.slideshow-container .text cta'); 
-
+  
   
   headerContent[0].innerText = 'Scraps of Life';
   imageContent[0].src = 'front-end/images/scraps_of_life.jpg'; /*change image*/
@@ -89,7 +89,7 @@ function showSlides(n) {
   ctaContent[1].style.cursor = "pointer";
   ctaContent[1].style.borderRadius = "12px";
   ctaContent[1].style.borderColor = "#3486eb";
-
+  ctaContent[1].style.boxShadow = "0 4px 16px 0 #3486eb";
 
 	 
   headerContent[2].innerText = 'A Lifestyle Lost';
@@ -101,9 +101,10 @@ function showSlides(n) {
   ctaContent[2].style.background = "#988488";
   ctaContent[2].style.cursor = "pointer";
   ctaContent[2].style.borderRadius = "12px";
-  ctaContent[2].style.borderColor = "#3486eb";})(window);
+  ctaContent[2].style.borderColor = "#3486eb";
+  ctaContent[2].style.boxShadow = "0 4px 16px 0 #3486eb";})(window);
 
-  
+
 
   //linking to stories.html
   // document.getElementsByClassName("cta").addEventListener("click", function () {
