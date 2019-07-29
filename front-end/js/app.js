@@ -1,7 +1,7 @@
 
 
 
-    document.body.style.background = "url('front-end/images/everyone_is_welcome.jpg')";
+    document.body.style.background = "url('front-end/images/sky3.jpg')";
 
 //fixed Navigation bar 
     const nav = document.querySelector('#main');

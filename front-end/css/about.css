@@ -88,6 +88,88 @@ html {
     text-transform: uppercase;
   }
   
+  .home .content-section {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* team info */
+  .text-content {
+      background: #56a4b8;
+      border-radius: 3vh;
+      color: #e9f2f2;
+  }
+
+  .home .major {
+    border-bottom: 2px dashed #C0C0C0;
+    margin-bottom: 1rem;
+    padding: 0% 2% 0% 2%;
+  }
+
+  .home .content-section .text-content {
+    width: 48%;
+    padding: 3% 1% 3% 1%;
+  }
+  .home .content-section .img-content {
+    width: 48%;
+    padding-left: 1%;
+  }
+  .home .content-section .img-content img {
+    border-radius: 10px;
+  }
+  @media (max-width:500px) {
+    .home .content-section {
+      display: flex;
+      flex-direction: column;
+    }
+    .home .content-section .text-content {
+      width: 100%;
+      padding: 0 3% 0 5%;
+    }
+    .home .content-section .img-content {
+      width: 100%;
+      padding: 0 3% 0 5%;
+    }
+  }
+  .home .inverse-content {
+    padding-bottom: 30px;
+    /* border-bottom: 2px dashed #C0C0C0; */
+  }
+  .home .inverse-content .text-content {
+    padding-left: 1%;
+    padding-right: 0;
+  }
+  .home .inverse-content .text-content .video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 50%;
+    max-height: 50%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+  }
+  .home .inverse-content .img-content {
+    padding-right: 1%;
+    padding-left: 0;
+  }
+  @media (max-width:500px) {
+    .home .inverse-content {
+      flex-direction: column-reverse;
+    }
+    .home .inverse-content .text-content {
+      width: 100%;
+      padding: 0 3% 0 5%;
+    }
+    .home .inverse-content .img-content {
+      width: 100%;
+      padding: 0 0 0 5%;
+    }
+  }
+  
   
     nav a:hover {
       color: #fcbb58;
@@ -103,7 +185,7 @@ html {
         padding: 1em;
         border: 1px solid #CCC;
         border-radius: 1em;
-        background-color: #b5b6b7;
+        background-color: #5ab2bf;
         font-size: 1rem;
         margin-bottom: 1rem;
     }
@@ -127,6 +209,7 @@ html {
             box-sizing: border-box;
             /* To harmonize the look & feel of text field border */
             border: 1px solid #999;
+            opacity: 0.7;
     }
     .home form input:focus,
     .home form textarea:focus {
@@ -159,9 +242,6 @@ html {
         cursor: pointer;
     }
           
-    a:hover {
-      color:#0f0;
-    }
 
   
     #copyright {
