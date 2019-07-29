@@ -27,6 +27,7 @@
         <li><a href="#">Login</a></li>
     </ul>
   </nav>
+  <div class="container home">
 
     <div class="main_content">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia fugit magnam autem officiis. Nostrum tempora eligendi quos voluptate aperiam iusto corporis, quae repellendus veritatis assumenda sunt, nisi eaque, harum cumque.</p>
@@ -38,44 +39,41 @@
     </div>
 
     <!-- Contact -->
-    <div class="container medium">
-        <header>
-        <h2>Drop us a line</h2>
-        <!-- <p>Drop me a line</p> -->
-        </header>
-        <div class="row">
-            <div class="col-12">
-                <form method="post" action="#">
-                    <div class="row">
-                        <div class="col-6 col-12-small">
-                            <input type="text" name="name" id="name" placeholder="Name" />
-                        </div>
-                        <div class="col-6 col-12-small">
-                            <input type="text" name="email" id="email" placeholder="Email" />
-                        </div>
-                        <div class="col-12">
-                            <input type="text" name="subject" id="subject" placeholder="Subject" />
-                        </div>
-                        <div class="col-12">
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <ul class="actions">
-                                <li><input type="submit" value="Send Message" /></li>
-                                <li><input type="reset" value="Clear Form" class="alt" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>
-            </div>
-         </div>
-    </div>
-
-    
-                
+    <div class="Subscribe">
+            <h3>Send us a message!</h3>
+        <form action="/my-handling-form-page" method="post">
+              <div>
+                <label for="frmNameA">Name</label>
+                <input type="text" name="name" id="frmNameA"
+                placeholder="Full name" required autocomplete="name">
+              </div>
+              <div>
+                <label for="frmEmailA">Email</label>
+                <input type="email" name="email" id="frmEmailA"
+                placeholder="name@example.com" required autocomplete="email">
+              </div>
+              <div>
+                <label for="frmPhoneNumA">Phone</label>
+                <input type="tel" name="phone" id="frmPhoneNumA"
+                placeholder="+1-555-555-1212" required autocomplete="tel">
+              </div>
+            
+              <div>
+                <label for="frmMessageA">Your message<br></label>
+                <textarea id="frmMessageA" name="Message" placeholder="Special instructions or requests"></textarea>
+              </div>
+               <div class="pure-controls">
+                     <label for="cb" class="pure-checkbox">
+                     <input id="cb" type="checkbox">Subscribe to our newsletter</label>
+              </div>
               
+              <div class="button">
+                <button type="submit">Send</button>
+              </div>
+        </form>
+    </div>    
+ </div>
 
-                    
 <footer>
      <ul id="copyright">
         <li>&copy; Refugee Stories. All rights reserved. 2019</li>

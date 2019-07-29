@@ -3,7 +3,7 @@
 
     document.body.style.background = "url('front-end/images/everyone_is_welcome.jpg')";
 
-
+//fixed Navigation bar 
     const nav = document.querySelector('#main');
     let topOfNav = nav.offsetTop;
 
@@ -62,7 +62,9 @@ function showSlides(n) {
   const imageContent = document.querySelectorAll('.slideshow-container .text img');
 	const pContent = document.querySelectorAll('.slideshow-container .text p');
 	const ctaContent = document.querySelectorAll('.slideshow-container .text button'); /*change button text*/
-	
+  // const ctaButton = document.getElementsByClassName('.slideshow-container .text cta'); 
+
+  
   headerContent[0].innerText = 'Scraps of Life';
   imageContent[0].src = 'front-end/images/scraps_of_life.jpg'; /*change image*/
 	pContent[0].innerText = 'Imagine the filthy, toxic mess all around you. Feel it on your skin.Imagine eating here.Now open your eyes and see all the people who live here.';
@@ -72,6 +74,9 @@ function showSlides(n) {
   ctaContent[0].style.background = "#988488";
   ctaContent[0].style.cursor = "pointer";
   ctaContent[0].style.borderRadius = "12px";
+  ctaContent[0].style.borderColor = "#3486eb";
+  ctaContent[0].style.boxShadow = "0 4px 16px 0 #3486eb";
+
 
   
   headerContent[1].innerText = 'War Widow';
@@ -83,6 +88,7 @@ function showSlides(n) {
   ctaContent[1].style.background = "#988488";
   ctaContent[1].style.cursor = "pointer";
   ctaContent[1].style.borderRadius = "12px";
+  ctaContent[1].style.borderColor = "#3486eb";
 
 
 	 
@@ -94,19 +100,26 @@ function showSlides(n) {
   ctaContent[2].style.fontSize = "large";
   ctaContent[2].style.background = "#988488";
   ctaContent[2].style.cursor = "pointer";
-  ctaContent[2].style.borderRadius = "12px";})(window);
+  ctaContent[2].style.borderRadius = "12px";
+  ctaContent[2].style.borderColor = "#3486eb";})(window);
+
+  
 
   //linking to stories.html
-  document.getElementsByClassName("cta").addEventListener("click", function (event) {
-    window.location = "stories.html";
-  });
+  // document.getElementsByClassName("cta").addEventListener("click", function () {
+  //   window.location = "stories.html";
+  // });
   
-  // const x = document.getElementById("callToAction"); 
+  // ctaButton.addEventListener("click", function(){window.location.assign("stories.html")});
+  // ctaButton.addEventListener("click", RespondClick); 
 
-  // x.addEventListener("click", RespondClick); 
-
+  // ctaContent.addEventListener("click", function (evt) {
+  //   evt.preventDefault();  
+  // window.location.replace("stories.html");
+  // return false;
+  // });
   // function RespondClick() { 
-  //     document.getElementById("effect").innerHTML += 
+  //     document.getElementsByClassName("cta").innerHTML += 
   //               "stories.html"; 
   // } 
 
