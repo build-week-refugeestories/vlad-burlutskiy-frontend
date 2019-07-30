@@ -99,37 +99,41 @@ html {
     cursor: pointer;
   }
 
-  .container {
-      display:  flex;
-      height: 10rem;
+  .upper-content {
+      display: flex;
+      text-align: center;
+      margin: 1% 1% 1% 1%;
+      padding: 0% 2% 0% 0%;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto ;/*specify the size width of the columns*/
+  .container-main {
+      display: flex;
+  }
+
+  /* Stories content */
+
+  .container-main .stories {
+    display: flex;
+    flex-direction: column;
     background-color: #2196F3;
     padding: 10px;
-    grid-gap: 50px 100px;
-    grid-template-rows: 25rem 25rem;/*specify the height of each row */
-    height: 50.5rem;
-    /* align-content: space-evenly; */
-    grid-gap: 10px;
+    height: 30rem;
     padding: 10px;
-    /* overflow: hidden; */
-    /* justify-content: space-evenly; */
     }
       
-    .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.543);
+    .stories > div {
+    background-color: rgba(255, 255, 255, 0.434);
     text-align: center;
+    margin: 1% 1%;
     padding: 20px 0;
     font-size: 30px;
     }
     
   
   
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
+  .story-item {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.283);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
@@ -137,51 +141,25 @@ html {
     transition: all 0.3s;
   }
 
-  .grid-item:hover {
+  .story-item p {
+      font-size: 1rem;
+      column-count: 2;
+      padding: 1% 1% 1% 1%;
+      column-gap: 40px;
+  }
+
+  .story-item:hover {
     transform: translateY(-4px) scale(1.01);  
   }
 
-  .bottom_content {
-      display: flex;
-      margin: 10rem 0rem 0rem 0rem;
-      padding-top: 10px;
-  }
-
-
-  /* .item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
- */
-
-  /* Main content */
-  /* .home .content-section {
-    margin: 30px 0;
+  .bottom-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    text-align: center;
+    margin: 1% 1% 1% 1%;
+    padding: 0% 2% 0% 0%;
   }
 
-  /* team info */
-  /* .text-content {
-      background: #56a4b884;
-      border-radius: 3vh;
-      color: #e9f2f2;
-      transition: all 0.3s;
-  }
 
-  .text-content:hover {
-    transform: translateY(-5px) scale(1.03);
-  }
-
-  .img-content {
-      transition: all 0.3s;
-      width:
-  }
-
-  .img-content:hover {
-    transform: translateY(-4px) scale(1.01);  
-  }
 
 
   /* footer elements */
