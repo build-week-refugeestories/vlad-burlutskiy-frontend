@@ -132,7 +132,7 @@ html {
   .home .major {
     border-bottom: 2px dashed #C0C0C0;
     margin-bottom: 1rem;
-    padding: 0% 2% 0% 2%;
+    padding: 0% 15% 0% 15%;
   }
 /* adding a border to a pseudo element of :after and give it a border-bottom and set the width. 
   .home .major:after {
@@ -180,7 +180,7 @@ html {
   @media only screen and (max-width:500px) {
     .home .content-section {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       margin: 20px 0;
     }
     .home .content-section .text-content {
@@ -214,7 +214,7 @@ html {
   }
   @media (max-width:500px) {
     .home .inverse-content {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
     .home .inverse-content .text-content {
       width: 100%;
