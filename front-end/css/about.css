@@ -1,3 +1,5 @@
+* {box-sizing:border-box} 
+
 html {
     box-sizing: border-box;
     background: #eeeeee;
@@ -6,9 +8,12 @@ html {
     font-weight: 200;
   }
   
+
+
   body {
-      margin: 0;
+      margin: 0 auto;
   }
+  
   
   
   header {
@@ -107,7 +112,7 @@ html {
   }
 
   .text-content:hover {
-    transform: translateY(-4px) scale(1.01);
+    transform: translateY(-5px) scale(1.03);
   }
 
   .img-content {
@@ -121,17 +126,37 @@ html {
 
 
   .home .major {
-    border-bottom: 2px dashed #C0C0C0;
+    
     margin-bottom: 1rem;
     padding: 0% 2% 0% 2%;
   }
+/* adding a border to a pseudo element of :after and give it a border-bottom and set the width.  */
+  .home .major:after {
+    content: "";
+    display: block;
+    border-bottom: 2px dashed #C0C0C0;
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+  }
+
+
 
   .social {
     display: flex;
     justify-content: space-around;
     padding: 0% 2% 0% 2%;
     list-style: none;
+    font-size: xx-large;
   }
+
+    .social a{
+        transition: all 0.3s;
+    }
+
+   .social a:hover {
+    transform: translateY(-5px) scale(1.03);
+   }
 
   .home .content-section .text-content {
     width: 48%;
@@ -161,6 +186,7 @@ html {
   }
   .home .inverse-content {
     padding-bottom: 30px;
+    width: 95%;
     /* border-bottom: 2px dashed #C0C0C0; */
   }
   .home .inverse-content .text-content {
@@ -168,6 +194,8 @@ html {
     padding-right: 0;
   }
   .home .inverse-content .img-content {
+    display: flex;
+    justify-content: flex-end;
     padding-right: 1%;
     padding-left: 0;
   }
@@ -287,5 +315,5 @@ html {
           margin-top: 0;
         }
   
-  * {box-sizing:border-box}
+
   
