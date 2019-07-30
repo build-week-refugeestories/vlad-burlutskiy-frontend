@@ -81,7 +81,7 @@ function showSlides(n) {
   
   headerContent[1].innerText = 'War Widow';
   imageContent[1].src = 'front-end/images/widow.png'; /*change image*/
-	pContent[1].innerText = 'She remembers telling him: “I don’t want to lose you. I don’t want my kids to grow up without a father.';
+	pContent[1].innerText = 'She remembers telling him: “I don’t want to lose you. I don’t want my kids to grow up without a father."';
   pContent[1].style.fontSize = 'large';
   ctaContent[1].innerText = 'Read more...';
   ctaContent[1].style.fontSize = "large";

@@ -102,6 +102,10 @@ html {
         background-color: 0 3px 17px #73487d;
     }
 
+    .cta:hover {
+        transform: scale(1.05);
+    }
+
 
     #copyright {
       font-size: 1em;
