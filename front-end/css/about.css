@@ -225,21 +225,26 @@ html {
     .Subscribe {
         /* Just to center the form on the page */
         margin: 0 auto;
-        width: 45%;
+        width: 35%;
         height: 1rem
         /* To see the outline of the form */
         padding: 1em;
         border: 1px solid #CCC;
         border-radius: 1em;
-        background-color: #5ab2bf;
+        background-color: #1d92b5;
         font-size: 1rem;
         margin-bottom: 1rem;
         transition: all 0.3s;
         color: white;
+        font-weight: bold;
     }
 
     .Subscribe:hover {
         transform: translateY(-3px);
+    }
+
+    .Subscribe h3 {
+        text-align: center;
     }
     .home form form div + div {
         margin-top: 1em;
@@ -247,9 +252,11 @@ html {
     .home form label {
         /* To make sure that all labels have the same size and are properly aligned */
         display: inline-block;
-        width: 90px;
+        width: 30%;
         text-align: right;
         font-size: 0.8rem;
+        opacity: 0.7;
+
         
         }
     .home form input, form textarea {
@@ -258,7 +265,7 @@ html {
     font: 0.8em sans-serif;
     background-color: #eaedef;
     /* To give the same size to all text fields */
-    width: 250px;
+    width: 55%;
     box-sizing: border-box;
     /* To harmonize the look & feel of text field border */
     border: 1px solid #999;
@@ -273,7 +280,7 @@ html {
         /* To properly align multiline text fields with their labels */
         vertical-align: top;
         /* To give enough room to type some text */
-        height: 3em;
+        height: 5em;
     }
     .home form .button {
     /* To position the buttons to the same position of the text fields */
