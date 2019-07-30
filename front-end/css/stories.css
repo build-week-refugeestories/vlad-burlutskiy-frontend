@@ -37,6 +37,9 @@ html {
     text-decoration: none;
   }
 
+  h3 {
+      text-align: center;
+  }
 /* Navbar styling */
   nav {
     background: black;
@@ -102,8 +105,9 @@ html {
   .upper-content {
       display: flex;
       text-align: center;
-      margin: 1% 1% 1% 1%;
+      margin: 1% 0% 0% 0%;
       padding: 0% 2% 0% 0%;
+      background-color: rgba(33, 194, 243, 0.639);
   }
 
   .container-main {
@@ -112,12 +116,11 @@ html {
 
   /* Stories content */
 
-  .container-main .stories {
+  .stories {
     display: flex;
     flex-direction: column;
-    background-color: #2196F3;
+    background-color: rgba(33, 194, 243, 0.639);
     padding: 10px;
-    height: 30rem;
     padding: 10px;
     }
       
@@ -133,7 +136,7 @@ html {
   
   .story-item {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.283);
+    background-color: rgba(33, 194, 243, 0.639);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
@@ -152,12 +155,21 @@ html {
     transform: translateY(-4px) scale(1.01);  
   }
 
+  .story-item .intro {
+    padding: 0% 1% 0% 1%;
+
+  }
   .bottom-content {
     display: flex;
-    text-align: center;
-    margin: 1% 1% 1% 1%;
-    padding: 0% 2% 0% 0%;
+      text-align: center;
+      padding: 0% 2% 0% 2%;
+      background-color: rgba(20, 177, 225, 0.797);
   }
+
+  .bottom-content h3 {
+    padding-right: 1%;
+  }
+  
 
 
 
@@ -166,12 +178,14 @@ html {
 
   footer {
     display: flex;
-    margin: 2% 6% 0% 6%;
+    /* margin: 2% 6% 0% 6%; */
+    background-color: rgba(20, 177, 225, 0.797);
   }
     #copyright {
       font-size: 1em;
-      color: rgba(255, 255, 255, 0.557);
+      color: rgba(255, 253, 253, 0.899);
       margin: 0;
+      background-color: rgba(20, 177, 225, 0.673);
     }
   
     #copyright li {
