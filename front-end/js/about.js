@@ -19,7 +19,7 @@
     
         window.addEventListener('scroll', fixNav);
     
-        document.body.style.background = "url('front-end/images/sky3.jpg')";
+        document.body.style.background = "url('front-end/images/sea2.jpg')";
     
     
     // var slideIndex = 1;
