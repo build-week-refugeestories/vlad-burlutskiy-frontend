@@ -121,7 +121,7 @@ html {
 
   .img-content {
       transition: all 0.3s;
-      width
+      width:
   }
 
   .img-content:hover {
@@ -173,21 +173,30 @@ html {
   }
   .home .content-section .img-content img {
     border-radius: 10px;
+    /* to make images responsive */
+    /* width: 100%;
+    height: auto; */
   }
-  @media (max-width:500px) {
+  @media only screen and (max-width:500px) {
     .home .content-section {
       display: flex;
       flex-direction: column;
+      margin: 20px 0;
     }
     .home .content-section .text-content {
       width: 100%;
       padding: 0 3% 0 5%;
+      margin-bottom: 5%;
     }
     .home .content-section .img-content {
       width: 100%;
       padding: 0 3% 0 5%;
     }
+    li.logo {
+        display: none;
+    }
   }
+
   .home .inverse-content {
     padding-bottom: 30px;
     width: 100%;
@@ -210,17 +219,16 @@ html {
     .home .inverse-content .text-content {
       width: 100%;
       padding: 0 3% 0 5%;
+      margin-bottom: 5%;
     }
     .home .inverse-content .img-content {
       width: 100%;
       padding: 0 0 0 5%;
+      justify-content: flex-start;
     }
+   
   }
   
-
-  
-
-
 /* Submit form */
     .Subscribe {
         /* Just to center the form on the page */
@@ -239,12 +247,23 @@ html {
         font-weight: bold;
     }
 
+    @media only screen and  (max-width: 800px) {
+        .Subscribe {
+            width: 65%;
+        }
+        .home .content-section .img-content img {
+            width: 95%;
+          }
+    
+    }
+
     .Subscribe:hover {
         transform: translateY(-3px);
     }
 
     .Subscribe h3 {
         text-align: center;
+        margin-bottom: 1%;
     }
     .home form form div + div {
         margin-top: 1em;
@@ -284,7 +303,9 @@ html {
     }
     .home form .button {
     /* To position the buttons to the same position of the text fields */
-        padding-left: 90px;
+        padding-left: 30%;
+        padding-bottom: 1%;
+
     /* same size as the label elements */
     }
     .home form button {
@@ -292,6 +313,7 @@ html {
             between the labels and their text fields */
         margin-left: 0.5em;
         height: 2rem;
+        width: 6rem;
         border-radius: 1rem;
         background-color: #171817b2;
         color: white;
@@ -306,7 +328,7 @@ html {
   /* footer elements */
     #copyright {
       font-size: 1em;
-      color: burlywood;
+      color: #3d3710;
       margin: 0;
     }
   
@@ -321,6 +343,6 @@ html {
     #copyright li:first-child {
         margin-top: 0;
     }
-  
+   
 
   
