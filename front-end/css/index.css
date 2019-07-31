@@ -239,7 +239,7 @@ html {
   @media only screen and (max-width: 500px) {
 
     h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     header {
         height: 7rem;
@@ -247,12 +247,11 @@ html {
 
     nav {
         height: 7rem;;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        font-weight: bolder;
+
     }
 
-    nav ul {
-        /* flex-wrap: nowrap; */
-    }
      
     .prev, .next {
         cursor: pointer;

@@ -66,19 +66,21 @@
    });
  }
  google.maps.event.addDomListener(window, 'load', init);
+ </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+
     <input id="pac-input" class="controls" type="text" placeholder="Search Box">
     <div class="container" id="map-canvas" style="height:300px;"></div>
 
     </script>
+   
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
     * The key parameter will contain your own API key (which is not needed for this tutorial)
     * The callback parameter executes the initMap() function
     -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn7OMLAK46PiYccxrb5P3UWAAvby9OgmI&callback=initMap">
-    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn7OMLAK46PiYccxrb5P3UWAAvby9OgmI&callback=initMap"></script>
+
   </body>
 </html>
