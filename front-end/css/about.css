@@ -113,6 +113,7 @@ html {
       border-radius: 3vh;
       color: #e9f2f2;
       transition: all 0.3s;
+      font-weight: bolder;
   }
 
   .text-content:hover {
@@ -148,7 +149,7 @@ html {
 /* Social media buttons */
   .social {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0% 2% 0% 2%;
     list-style: none;
     font-size: xx-large;
@@ -161,6 +162,9 @@ html {
    .social a:hover {
     transform: translateY(-5px) scale(1.03);
    }
+
+
+
 
   .home .content-section .text-content {
     width: 48%;
