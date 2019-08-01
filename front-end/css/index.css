@@ -288,7 +288,7 @@ html {
     }
     .slideshow-container {
         height: 28.6rem;
-        width: 22rem;
+        width: 100%;
         padding-top: 5%;
         margin-top: 5%;
       }
@@ -300,7 +300,7 @@ html {
     }
 
     .dot {
-        margin: -4px 7px;
+        margin: 0px 7px;
     }
    
   }
