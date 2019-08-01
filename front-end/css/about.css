@@ -99,6 +99,29 @@ html {
     cursor: pointer;
   }
 
+  .upper-content {
+    display: -webkit-flex;
+    justify-content: center;
+    font-size: larger;
+    margin: 1% 0% 0% 0%;
+    padding: 0% 2% 0% 0%;
+    background-color: rgba(33, 194, 243, 0.639);
+    opacity: 0.7;
+}
+
+.upper-content h3 {
+  padding: 0% 1% 0% 1%;
+  margin: 2% 0% 0% 3%;
+}
+
+.upper-content p {
+  text-align: justify;
+  padding: 0% 2% 1% 2%;
+  margin: 1% 0% 0% 4%;
+  font-weight: bolder;
+}
+
+
   /* Main content */
   .home .content-section {
     margin: 30px 0;
@@ -106,6 +129,8 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+
 
   /* team info */
   .text-content {
@@ -198,7 +223,10 @@ html {
     padding-right: 1%;
     padding-left: 0;
   }
-  
+
+  .home .inverse-content .img-content img {
+    /* width: 100%; */
+  }
 /* Submit form */
     .Subscribe {
         /* Just to center the form on the page */
@@ -308,15 +336,41 @@ html {
     }
 
     @media only screen and  (max-width: 800px) {
+      
+      .upper-content {
+        margin: 12px 0px 0px 0px;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .upper-content br {
+        display: none;
+      }
+      
       .Subscribe {
           width: 65%;
       }
       .home .content-section .img-content img {
           width: 95%;
         }
+
+        .home .inverse-content .img-content {
+          /* width: 100%; */
+          display: block;
+          padding: 0 0 7px 5%;
+        }
+
+      .home .inverse-content .img-content img {
+          width: 100%;
+          padding: 0 0 7px 5%;
+      }     
     }
    
     @media only screen and (max-width:500px) {
+
+      .home .major {
+        padding: 0% 13% 0% 13%;
+      }
       .home .content-section {
         display: flex;
         flex-direction: column-reverse;
@@ -343,7 +397,6 @@ html {
       .home .inverse-content .img-content {
         width: 100%;
         padding: 0 0 7px 5%;
-        justify-content: flex-start;
       }
 
       li.logo {
