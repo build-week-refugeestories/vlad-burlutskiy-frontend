@@ -26,6 +26,7 @@
         const shortStory = story.innerText.slice(0,1255) + '...(click for full story)';
         story.innerText = shortStory;
         story.addEventListener('click', p => p.path[0].innerText = fullStory);
+        story.addEventListener('touchend', p => p.path[0].innerText = fullStory);
         } else {
             story.innerText = fullStory;
         }
