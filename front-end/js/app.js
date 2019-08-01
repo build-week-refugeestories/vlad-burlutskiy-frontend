@@ -67,7 +67,7 @@ function showSlides(n) {
   
   headerContent[0].innerText = 'Scraps of Life';
   imageContent[0].src = 'front-end/images/scraps_of_life.jpg'; /*change image*/
-	pContent[0].innerText = 'Imagine the filthy, toxic mess all around you. Feel it on your skin.Imagine eating here.Now open your eyes and see all the people who live here.';
+	pContent[0].innerText = 'Imagine the filthy, toxic mess all around you. Feel it on your skin.Imagine eating here.Now open your eyes and see all the people who live here...';
   pContent[0].style.fontSize = 'large';
   ctaContent[0].innerText = 'Read more...';
   ctaContent[0].style.fontSize = "large";
@@ -81,7 +81,7 @@ function showSlides(n) {
   
   headerContent[1].innerText = 'War Widow';
   imageContent[1].src = 'front-end/images/widow.png'; /*change image*/
-	pContent[1].innerText = 'She remembers telling him: “I don’t want to lose you. I don’t want my kids to grow up without a father."';
+	pContent[1].innerText = 'She remembers telling him: “I don’t want to lose you. I don’t want my kids to grow up without a father..."';
   pContent[1].style.fontSize = 'large';
   ctaContent[1].innerText = 'Read more...';
   ctaContent[1].style.fontSize = "large";
@@ -94,7 +94,7 @@ function showSlides(n) {
 	 
   headerContent[2].innerText = 'A Lifestyle Lost';
   imageContent[2].src = 'front-end/images/lifestyle_lost.png'; /*change image*/
-	pContent[2].innerText = 'Bombs and artillery shells are equally lethal to rich and poor, and among the more than 2.3 million Syrian refugees are many wealthy Syrians who have had family slaughtered. ';
+	pContent[2].innerText = 'Bombs and artillery shells are equally lethal to rich and poor, and among the more than 2.3 million Syrian refugees are many wealthy... ';
   pContent[2].style.fontSize = 'large';
   ctaContent[2].innerText = 'Read more...';
   ctaContent[2].style.fontSize = "large";
