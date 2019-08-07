@@ -1,0 +1,263 @@
+/* * {box-sizing:border-box}  */
+
+html {
+    box-sizing: border-box;
+    background: #eeeeee;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+
+
+  body {
+      margin: 0;
+  }
+  
+  
+  
+  header {
+    text-align: center;
+    height: 50vh;
+    /* background: url('front-end/images/immigrants_make_america.jpg') bottom center no-repeat; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 7vw;
+    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  h3 {
+      text-align: center;
+  }
+/* Navbar styling */
+  nav {
+    background: black;
+    top: 0;
+    width: 100%;
+    transition:all 0.5s;
+    position: relative;
+    z-index: 1;
+  }
+  
+  body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(124, 116, 235, 0.1);
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+      flex-wrap: wrap;
+  }
+  
+  nav li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li.logo {
+    max-width: 0;
+    overflow: hidden;
+    background: white;
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  li.logo a {
+    color: black;
+  }
+  
+  .fixed-nav li.logo {
+    max-width: 500px;
+
+  }
+  nav a {
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+
+  nav a:hover {
+    color: #fcbb58;
+    cursor: pointer;
+  }
+
+  .upper-content {
+      display: -webkit-flex;
+      justify-content: center;
+      font-size: larger;
+      margin: 1% 0% 0% 0%;
+      padding: 0% 2% 0% 0%;
+      background-color: rgba(33, 194, 243, 0.639);
+      opacity: 0.7;
+  }
+
+ .upper-content h3 {
+    padding: 0% 1% 0% 1%;
+    margin: 1% 0% 0% 3%;
+ }
+
+ .upper-content p {
+    padding: 0% 2% 1% 2%;
+    margin: 1% 0% 0% 4%;
+    font-weight: bolder;
+ }
+
+  .container-main {
+      display: flex;
+  }
+
+  /* Stories content */
+
+  .stories {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(121, 214, 242, 0.488);
+    padding: 10px;
+    padding: 10px;
+    }
+      
+    .stories > div {
+    background-color: rgba(255, 255, 255, 0.434);
+    text-align: center;
+    margin: 1% 17%;
+    padding: 1% 0;
+    font-size: 30px;
+    }
+    
+  
+  
+  .story-item {
+    display: flex;
+    background-color: rgba(33, 194, 243, 0.577);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    /* font-size: 30px; */
+    text-align: center;
+    transition: all 0.3s;
+  }
+
+ 
+
+  .story-item p {
+      font-size: 1rem;
+      font-weight: bolder;
+      text-align: justify;
+      text-indent: 10px;
+      column-count: 2;
+      padding: 1% 2% 1% 2%;
+      column-gap: 40px;
+  }
+
+  .story-item:hover {
+    transform: translateY(-4px) scale(1.01);  
+  }
+
+  .story-item .intro {
+    padding: 0% 1% 0% 1%;
+
+  }
+
+ 
+  .bottom-content {
+    display: flex;
+    justify-content: center;
+    padding: 1% 2% 0% 2%;
+    background-color: rgba(20, 177, 225, 0.797);
+    overflow: hidden;
+    font-weight: bolder;
+    opacity: 0.7;
+  }
+
+  .number span {
+      color: red;
+      font-weight: bold;
+      font-size: larger;
+  }
+
+
+  /* footer elements */
+
+  footer {
+    display: flex;
+    /* margin: 2% 6% 0% 6%; */
+    background-color: rgba(20, 177, 225, 0.797);
+  }
+    #copyright {
+      font-size: 1em;
+      color: rgba(255, 253, 253, 0.899);
+      margin: 0;
+      background-color: rgba(20, 177, 225, 0.797);;
+    }
+  
+    #copyright li {
+    display: block;
+    margin: 5em 0 0 0;
+    padding-bottom: 2%;
+    box-shadow: none;
+    border-left: 0;
+    }
+  
+    #copyright li:first-child {
+        margin-top: 0;
+    }
+   
+
+    @media only screen and (max-width:800px){
+      li.logo {
+        display: none;
+      }
+
+      .story-item {
+        flex-direction: column;
+      }
+
+      .upper-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bottom-content {
+        text-align: center
+      }
+    }
+
+  /* 500px */
+  @media only screen and (max-width:500px) {
+    
+    .story-item p {
+      column-count: 1;
+      padding: 0 0.5rem;
+    }
+
+    .stories > div {
+      text-align: center;
+      margin: 1% 10%;
+      }
+
+    .img-content img{
+      max-width: 100%;
+    }
+  }
+
+
